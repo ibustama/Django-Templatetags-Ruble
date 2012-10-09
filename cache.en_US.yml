@@ -1,0 +1,355 @@
+!!com.aptana.scripting.model.BundleElement
+author: My Name
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: Swap Case
+    customProperties: null
+    displayName: Swap Case
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Sample Snippet
+    customProperties: null
+    displayName: Sample Snippet
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Sample Snippet
+      customProperties: null
+      displayName: Sample Snippet
+      path: bundle.rb
+      scope: null
+    commandName: Sub Menu
+    customProperties: null
+    displayName: Sub Menu
+    path: bundle.rb
+    scope: null
+  commandName: Django Templatetags
+  customProperties: null
+  displayName: Django Templatetags
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: *id001
+    commandName: Swap Case
+    customProperties: null
+    displayName: Swap Case
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Sample Snippet
+    customProperties: null
+    displayName: Sample Snippet
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children:
+    - children: *id001
+      commandName: Sample Snippet
+      customProperties: null
+      displayName: Sample Snippet
+      path: bundle.rb
+      scope: null
+    commandName: Sub Menu
+    customProperties: null
+    displayName: Sub Menu
+    path: bundle.rb
+    scope: null
+  commandName: Django Templatetags
+  customProperties: null
+  displayName: Django Templatetags
+  path: bundle.rb
+  scope: null
+- !command
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !template
+  async: false
+  customProperties: null
+  displayName: Sample File Template
+  filetype: '*.txt'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Swap Case
+  input: [selection, word]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/commands.rb
+  runType: current_thread
+  scope: source
+  workingDirectoryType: UNDEFINED
+- !template
+  async: false
+  customProperties: null
+  displayName: Sample File Template
+  filetype: '*.txt'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.ProjectTemplateElement
+  customProperties: {replace_parameters: true}
+  description: A basic template which includes only a default index.html file
+  displayName: Sample Project Template
+  icon: null
+  id: Sample Project Template
+  location: templates/sample_project_template.zip
+  path: templates/templates.rb
+  priority: 0
+  scope: null
+  type: WEB
+- !!com.aptana.scripting.model.ProjectSampleElement
+  category: com.aptana.projects.samples.web.category
+  customProperties: null
+  description: A basic project sample
+  displayName: Project Sample Example
+  icon: {}
+  id: sample.local
+  location: samples/local_sample.zip
+  natures: [com.aptana.projects.webnature]
+  path: samples/project_samples.rb
+  scope: null
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [block]
+  description: null
+  displayName: Block Tag
+  expansion: '{% block ${1:name} %}
+
+    $2
+
+    {% endblock %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [comment]
+  description: null
+  displayName: Comment Tag
+  expansion: '{% comment %}
+
+    $2
+
+    {% endcomment %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [extends]
+  description: null
+  displayName: Extends Tag
+  expansion: '{% extends ''${1:template path}'' %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [for]
+  description: null
+  displayName: For Tag
+  expansion: '{% for $1 in $2 %}
+
+    $3
+
+    {% endfor %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [include]
+  description: null
+  displayName: Include Tag
+  expansion: '{% include ${1} %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: null
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [load]
+  description: null
+  displayName: Load Tag
+  expansion: '{% load $1 %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [trans]
+  description: null
+  displayName: Trans Tag
+  expansion: '{% trans ''$1'' %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [csrf]
+  description: null
+  displayName: CSRF Token Tag
+  expansion: '{% csrf_token %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [evaluate]
+  description: null
+  displayName: Evaluate Tag
+  expansion: '{% evaluate $1 %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+copyright: '(c) Copyright 2011 sample.org. Distributed under MIT license.
+
+  '
+customProperties: null
+decreaseIndentMarkers: {}
+description: 'Sample description
+
+  '
+displayName: Django Templatetags
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
+increaseIndentMarkers: {}
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
