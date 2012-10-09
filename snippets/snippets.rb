@@ -22,6 +22,20 @@ snippet "Extends Tag" do |snip|
   snip.scope = 'text.html.basic'
 end
 
+snippet "If Tag" do |snip|
+  snip.trigger = "if"
+  snip.expansion = "{% if $1 %}
+$2
+{% endif %}"
+  snip.scope = 'text.html.basic'
+end
+
+snippet "Else Tag" do |snip|
+  snip.trigger = "else"
+  snip.expansion = "{% else %}"
+  snip.scope = 'text.html.basic'
+end
+
 snippet "For Tag" do |snip|
   snip.trigger = "for"
   snip.expansion = "{% for $1 in $2 %}
@@ -44,6 +58,32 @@ end
 snippet "Trans Tag" do |snip|
   snip.trigger = "trans"
   snip.expansion = "{% trans '$1' %}"
+  snip.scope = 'text.html.basic'
+end
+
+snippet "Blocktrans Tag" do |snip|
+  snip.trigger = "blocktrans"
+  snip.expansion = "{% blocktrans %}
+$1
+{% endblocktrans %}"
+  snip.scope = 'text.html.basic'
+end
+
+snippet "Blocktrans Tag - With" do |snip|
+  snip.trigger = "blocktrans"
+  snip.expansion = "{% blocktrans with $1 %}
+$2
+{% endblocktrans %}"
+  snip.scope = 'text.html.basic'
+end
+
+snippet "Blocktrans Tag - Plural" do |snip|
+  snip.trigger = "blocktrans"
+  snip.expansion = "{% blocktrans count $1 %}
+$2
+{% plural %}
+$3
+{% endblocktrans %}"
   snip.scope = 'text.html.basic'
 end
 
