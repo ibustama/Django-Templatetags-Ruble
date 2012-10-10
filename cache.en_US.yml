@@ -166,7 +166,7 @@ children:
   displayName: Django Templatetags
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.CommandElement
+- !command
   async: false
   customProperties: null
   displayName: Swap Case
@@ -190,7 +190,7 @@ children:
   natures: [com.aptana.projects.webnature]
   path: samples/project_samples.rb
   scope: null
-- !!com.aptana.scripting.model.TemplateElement
+- !template
   async: false
   customProperties: null
   displayName: Sample File Template
@@ -292,6 +292,27 @@ children:
     $2
 
     {% endif %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [elif]
+  description: null
+  displayName: Elif Tag
+  expansion: '{% elif $1 %}
+
+    $2'
   iconPath: null
   input: [none]
   inputPath: null

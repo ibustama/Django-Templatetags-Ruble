@@ -30,6 +30,13 @@ $2
   snip.scope = 'text.html.basic'
 end
 
+snippet "Elif Tag" do |snip|
+  snip.trigger = "elif"
+  snip.expansion = "{% elif $1 %}
+$2"
+  snip.scope = 'text.html.basic'
+end
+
 snippet "Else Tag" do |snip|
   snip.trigger = "else"
   snip.expansion = "{% else %}"
