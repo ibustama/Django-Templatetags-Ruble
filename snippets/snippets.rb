@@ -100,6 +100,12 @@ snippet "CSRF Token Tag" do |snip|
   snip.scope = 'text.html.basic'
 end
 
+snippet "Url Tag" do |snip|
+  snip.trigger = "url"
+  snip.expansion = "{% url $1 %}"
+  snip.scope = 'text.html.basic'
+end
+
 snippet "Evaluate Tag" do |snip|
   snip.trigger = "evaluate"
   snip.expansion = "{% evaluate $1 %}"

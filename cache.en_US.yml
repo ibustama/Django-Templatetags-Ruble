@@ -519,6 +519,25 @@ children:
   async: false
   category: null
   customProperties:
+    prefix_values: [url]
+  description: null
+  displayName: Url Tag
+  expansion: '{% url $1 %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
     prefix_values: [evaluate]
   description: null
   displayName: Evaluate Tag
