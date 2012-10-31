@@ -284,6 +284,29 @@ children:
   async: false
   category: null
   customProperties:
+    prefix_values: [with]
+  description: null
+  displayName: With Tag
+  expansion: '{% with $1 %}
+
+    $2
+
+    {% endwith %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
     prefix_values: [if]
   description: null
   displayName: If Tag

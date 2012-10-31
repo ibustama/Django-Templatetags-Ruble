@@ -22,6 +22,14 @@ snippet "Extends Tag" do |snip|
   snip.scope = 'text.html.basic'
 end
 
+snippet "With Tag" do |snip|
+  snip.trigger = "with"
+  snip.expansion = "{% with $1 %}
+$2
+{% endwith %}"
+  snip.scope = 'text.html.basic'
+end
+
 snippet "If Tag" do |snip|
   snip.trigger = "if"
   snip.expansion = "{% if $1 %}
