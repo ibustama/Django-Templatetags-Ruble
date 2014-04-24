@@ -51,6 +51,14 @@ snippet "Else Tag" do |snip|
   snip.scope = 'text.html.basic'
 end
 
+snippet "Ifchanged Tag" do |snip|
+  snip.trigger = "ifchanged"
+  snip.expansion = "{% ifchanged $1 %}
+$2
+{% endifchanged %}"
+  snip.scope = 'text.html.basic'
+end
+
 snippet "For Tag" do |snip|
   snip.trigger = "for"
   snip.expansion = "{% for $1 in $2 %}

@@ -139,6 +139,7 @@ children:
   path: templates/templates.rb
   priority: 0
   scope: null
+  tags: *id001
   type: WEB
 - !!com.aptana.scripting.model.ProjectSampleElement
   category: com.aptana.projects.samples.web.category
@@ -291,6 +292,29 @@ children:
   description: null
   displayName: Else Tag
   expansion: '{% else %}'
+  iconPath: null
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: text.html.basic
+  tags: *id001
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  category: null
+  customProperties:
+    prefix_values: [ifchanged]
+  description: null
+  displayName: Ifchanged Tag
+  expansion: '{% ifchanged $1 %}
+
+    $2
+
+    {% endifchanged %}'
   iconPath: null
   input: [none]
   inputPath: null
